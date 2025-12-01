@@ -1,0 +1,41 @@
+// ═══════════════════════════════════════════════════════════════
+// Exemplo 11: Soma até N
+// Calcula a soma de números de 1 até n
+// ═══════════════════════════════════════════════════════════════
+
+funcao somaAte(n: inteiro): inteiro {
+    var soma: inteiro = 0
+    
+    para i de 1 ate n {
+        soma = soma + i
+    }
+    
+    retorna soma
+}
+
+funcao somaPares(n: inteiro): inteiro {
+    var soma: inteiro = 0
+    
+    para i de 2 ate n {
+        se ((i % 2) == 0) {
+            soma = soma + i
+        }
+    }
+    
+    retorna soma
+}
+
+funcao principal() {
+    escreva("Cálculos de Soma:")
+    escreva("")
+    
+    escreva("Soma de 1 até 10: ", somaAte(10))
+    escreva("Soma de 1 até 100: ", somaAte(100))
+    escreva("Soma de 1 até 1000: ", somaAte(1000))
+    
+    escreva("")
+    escreva("Soma dos pares até 20: ", somaPares(20))
+    escreva("Soma dos pares até 100: ", somaPares(100))
+    
+    
+}

@@ -1,0 +1,39 @@
+// ═══════════════════════════════════════════════════════════════
+// Exemplo 14: Conversão de Temperaturas
+// Converte entre Celsius e Fahrenheit
+// ═══════════════════════════════════════════════════════════════
+
+funcao celsiusParaFahrenheit(celsius: real): real {
+    retorna (celsius * 9 / 5) + 32
+}
+
+funcao fahrenheitParaCelsius(fahrenheit: real): real {
+    retorna (fahrenheit - 32) * 5 / 9
+}
+
+funcao principal() {
+    escreva("Conversão de Temperaturas:")
+    escreva("")
+    
+    var temp_c: real = 0.0
+    escreva("0°C = ", celsiusParaFahrenheit(temp_c), "°F")
+    
+    temp_c = 25.0
+    escreva("25°C = ", celsiusParaFahrenheit(temp_c), "°F")
+    
+    temp_c = 100.0
+    escreva("100°C = ", celsiusParaFahrenheit(temp_c), "°F")
+    
+    escreva("")
+    
+    var temp_f: real = 32.0
+    escreva("32°F = ", fahrenheitParaCelsius(temp_f), "°C")
+    
+    temp_f = 77.0
+    escreva("77°F = ", fahrenheitParaCelsius(temp_f), "°C")
+    
+    temp_f = 212.0
+    escreva("212°F = ", fahrenheitParaCelsius(temp_f), "°C")
+    
+    
+}

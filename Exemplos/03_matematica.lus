@@ -1,0 +1,20 @@
+// ═══════════════════════════════════════════════════════════════
+// Exemplo 3: Operações Matemáticas
+// Demonstra operadores básicos
+// ═══════════════════════════════════════════════════════════════
+
+funcao principal() {
+    var a: inteiro = 10
+    var b: inteiro = 3
+    
+    escreva("Operações com a=", a, " e b=", b)
+    escreva("")
+    escreva("Soma: ", (a + b))
+    escreva("Subtração: ", (a - b))
+    escreva("Multiplicação: ", (a * b))
+    escreva("Divisão: ", (a / b))
+    escreva("Módulo: ", (a % b))
+    escreva("Potência: ", (a ** b))
+    
+    
+}

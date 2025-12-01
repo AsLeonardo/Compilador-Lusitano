@@ -1,0 +1,57 @@
+// ═══════════════════════════════════════════════════════════════
+// Exemplo 15: Máximo e Mínimo
+// Encontra o maior e menor número
+// ═══════════════════════════════════════════════════════════════
+
+funcao maximo(a: inteiro, b: inteiro): inteiro {
+    se (a > b) {
+        retorna a
+    } senao {
+        retorna b
+    }
+}
+
+funcao minimo(a: inteiro, b: inteiro): inteiro {
+    se (a < b) {
+        retorna a
+    } senao {
+        retorna b
+    }
+}
+
+funcao maiorDeTres(a: inteiro, b: inteiro, c: inteiro): inteiro {
+    var maior: inteiro = a
+    
+    se (b > maior) {
+        maior = b
+    }
+    
+    se (c > maior) {
+        maior = c
+    }
+    
+    retorna maior
+}
+
+funcao principal() {
+    escreva("Comparação de Números:")
+    escreva("")
+    
+    var x: inteiro = 15
+    var y: inteiro = 8
+    
+    escreva("Entre ", x, " e ", y, ":")
+    escreva("  Máximo: ", maximo(x, y))
+    escreva("  Mínimo: ", minimo(x, y))
+    
+    escreva("")
+    
+    var a: inteiro = 10
+    var b: inteiro = 25
+    var c: inteiro = 15
+    
+    escreva("Entre ", a, ", ", b, " e ", c, ":")
+    escreva("  Maior: ", maiorDeTres(a, b, c))
+    
+    
+}

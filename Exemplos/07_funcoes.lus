@@ -1,0 +1,45 @@
+// ═══════════════════════════════════════════════════════════════
+// Exemplo 7: Funções
+// Demonstra como definir e chamar funções
+// ═══════════════════════════════════════════════════════════════
+
+funcao saudacao(nome: texto) {
+    escreva("Olá, ", nome, "!")
+}
+
+funcao somar(a: inteiro, b: inteiro): inteiro {
+    retorna a + b
+}
+
+funcao multiplicar(x: real, y: real): real {
+    retorna x * y
+}
+
+funcao ehPar(numero: inteiro): logico {
+    retorna (numero % 2) == 0
+}
+
+funcao principal() {
+    escreva("Testando funções...")
+    escreva("")
+    
+    saudacao("Maria")
+    saudacao("João")
+    
+    escreva("")
+    var resultado: inteiro = somar(10, 20)
+    escreva("Soma: ", resultado)
+    
+    escreva("")
+    var mult: real = multiplicar(3.5, 2.0)
+    escreva("Multiplicação: ", mult)
+    
+    escreva("")
+    se (ehPar(4)) {
+        escreva("4 é par")
+    } senao {
+        escreva("4 é ímpar")
+    }
+    
+    
+}

@@ -1,0 +1,25 @@
+// ═══════════════════════════════════════════════════════════════
+// Exemplo 8: Fatorial (Recursão)
+// Demonstra função recursiva
+// ═══════════════════════════════════════════════════════════════
+
+funcao fatorial(n: inteiro): inteiro {
+    se (n <= 1) {
+        retorna 1
+    }
+    retorna n * fatorial(n - 1)
+}
+
+funcao principal() {
+    escreva("Cálculo de Fatoriais:")
+    escreva("")
+    
+    escreva("1! = ", fatorial(1))
+    escreva("2! = ", fatorial(2))
+    escreva("3! = ", fatorial(3))
+    escreva("4! = ", fatorial(4))
+    escreva("5! = ", fatorial(5))
+    escreva("6! = ", fatorial(6))
+    
+    
+}

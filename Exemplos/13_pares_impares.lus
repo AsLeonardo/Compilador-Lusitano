@@ -1,0 +1,25 @@
+// ═══════════════════════════════════════════════════════════════
+// Exemplo 13: Pares e Ímpares
+// Classifica números entre pares e ímpares
+// ═══════════════════════════════════════════════════════════════
+
+funcao ehPar(numero: inteiro): logico {
+    retorna (numero % 2) == 0
+}
+
+funcao principal() {
+    var limite: inteiro = 20
+    
+    escreva("Números de 1 até ", limite, ":")
+    escreva("")
+    
+    para i de 1 ate limite {
+        se (ehPar(i)) {
+            escreva(i, " é PAR")
+        } senao {
+            escreva(i, " é ÍMPAR")
+        }
+    }
+    
+    
+}

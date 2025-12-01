@@ -1,0 +1,33 @@
+// ═══════════════════════════════════════════════════════════════
+// Exemplo 10: Números Primos
+// Demonstra verificação de números primos
+// ═══════════════════════════════════════════════════════════════
+
+funcao ehPrimo(n: inteiro): logico {
+    se (n < 2) {
+        retorna falso
+    }
+    
+    var i: inteiro = 2
+    enquanto (i * i <= n) {
+        se ((n % i) == 0) {
+            retorna falso
+        }
+        i = i + 1
+    }
+    
+    retorna verdadeiro
+}
+
+funcao principal() {
+    escreva("Números primos de 1 a 30:")
+    escreva("")
+    
+    para numero de 1 ate 30 {
+        se (ehPrimo(numero)) {
+            escreva(numero, " é primo")
+        }
+    }
+    
+    
+}

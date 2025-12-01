@@ -1,0 +1,30 @@
+// ═══════════════════════════════════════════════════════════════
+// Exemplo 6: Laço Enquanto (While)
+// Demonstra estrutura enquanto
+// ═══════════════════════════════════════════════════════════════
+
+funcao principal() {
+    var contador: inteiro = 1
+    
+    escreva("Laço enquanto (contador de 1 até 5):")
+    escreva("")
+    
+    enquanto (contador <= 5) {
+        escreva("Contador: ", contador)
+        contador = contador + 1
+    }
+    
+    escreva("")
+    escreva("Contagem regressiva com enquanto:")
+    escreva("")
+    
+    var numero: inteiro = 5
+    enquanto (numero > 0) {
+        escreva(numero, "...")
+        numero = numero - 1
+    }
+    
+    escreva("Pronto!")
+    
+    
+}

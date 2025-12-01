@@ -1,0 +1,33 @@
+// ═══════════════════════════════════════════════════════════════
+// Exemplo 4: Condicionais
+// Demonstra estrutura se/senao
+// ═══════════════════════════════════════════════════════════════
+
+funcao principal() {
+    var idade: inteiro = 20
+    
+    escreva("Verificando idade...")
+    escreva("")
+    
+    se (idade >= 18) {
+        escreva("Você é maior de idade")
+    } senao {
+        escreva("Você é menor de idade")
+    }
+    
+    escreva("")
+    
+    var numero: inteiro = 5
+    
+    se (numero > 10) {
+        escreva("Número grande")
+    } senao {
+        se (numero > 0) {
+            escreva("Número positivo e pequeno")
+        } senao {
+            escreva("Número negativo ou zero")
+        }
+    }
+    
+    
+}

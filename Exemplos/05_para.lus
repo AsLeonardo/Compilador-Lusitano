@@ -1,0 +1,25 @@
+// ═══════════════════════════════════════════════════════════════
+// Exemplo 5: Laço Para (For)
+// Demonstra estrutura para...de...ate
+// ═══════════════════════════════════════════════════════════════
+
+funcao principal() {
+    escreva("Contagem de 1 até 10:")
+    escreva("")
+    
+    para i de 1 ate 10 {
+        escreva("Número: ", i)
+    }
+    
+    escreva("")
+    escreva("Contagem regressiva de 5 até 1:")
+    escreva("")
+    
+    para j de 5 ate 1 {
+        escreva(j, "...")
+    }
+    
+    escreva("Lançamento!")
+    
+    
+}

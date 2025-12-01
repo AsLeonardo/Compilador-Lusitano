@@ -1,0 +1,40 @@
+// ═══════════════════════════════════════════════════════════════
+// Exemplo 9: Fibonacci
+// Demonstra sequência de Fibonacci
+// ═══════════════════════════════════════════════════════════════
+
+funcao fibonacci(n: inteiro): inteiro {
+    se (n <= 1) {
+        retorna n
+    }
+    retorna fibonacci(n - 1) + fibonacci(n - 2)
+}
+
+funcao fibonacciIterativo(n: inteiro): inteiro {
+    se (n <= 1) {
+        retorna n
+    }
+    
+    var anterior: inteiro = 0
+    var atual: inteiro = 1
+    var proximo: inteiro = 0
+    
+    para i de 2 ate n {
+        proximo = anterior + atual
+        anterior = atual
+        atual = proximo
+    }
+    
+    retorna atual
+}
+
+funcao principal() {
+    escreva("Sequência de Fibonacci (primeiros 10):")
+    escreva("")
+    
+    para i de 0 ate 9 {
+        escreva("F(", i, ") = ", fibonacciIterativo(i))
+    }
+    
+    
+}

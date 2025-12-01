@@ -1,0 +1,25 @@
+// ═══════════════════════════════════════════════════════════════
+// Exemplo 12: Tabuada
+// Imprime tabuada de um número
+// ═══════════════════════════════════════════════════════════════
+
+funcao tabuada(numero: inteiro) {
+    escreva("╔═══════════════════╗")
+    escreva("║ Tabuada do ", numero)
+    escreva("╚═══════════════════╝")
+    
+    para i de 1 ate 10 {
+        var resultado: inteiro = numero * i
+        escreva(numero, " × ", i, " = ", resultado)
+    }
+}
+
+funcao principal() {
+    tabuada(5)
+    
+    escreva("")
+    
+    tabuada(7)
+    
+    
+}
