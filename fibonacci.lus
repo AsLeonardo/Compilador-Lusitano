@@ -1,0 +1,77 @@
+// ═══════════════════════════════════════════════════════════════
+// Exemplo: Calculadora de Fibonacci
+// Linguagem: Lusitano
+// ═══════════════════════════════════════════════════════════════
+
+// Função recursiva para calcular Fibonacci
+funcao fibonacci(n: inteiro): inteiro {
+    se (n <= 1) {
+        retorna n
+    }
+    retorna fibonacci(n - 1) + fibonacci(n - 2)
+}
+
+// Função iterativa (mais eficiente)
+funcao fibonacciIterativo(n: inteiro): inteiro {
+    se (n <= 1) {
+        retorna n
+    }
+    
+    var anterior: inteiro = 0
+    var atual: inteiro = 1
+    var proximo: inteiro = 0
+    
+    para i de 2 ate n {
+        proximo = anterior + atual
+        anterior = atual
+        atual = proximo
+    }
+    
+    retorna atual
+}
+
+// Verifica se um número é primo
+funcao ehPrimo(n: inteiro): logico {
+    se (n < 2) {
+        retorna falso
+    }
+    
+    var i: inteiro = 2
+    enquanto (i * i <= n) {
+        se (n % i == 0) {
+            retorna falso
+        }
+        i = i + 1
+    }
+    
+    retorna verdadeiro
+}
+
+// Função principal
+funcao principal(): inteiro {
+    escreva("╔═══════════════════════════════════════╗")
+    escreva("║     Demonstração Lusitano             ║")
+    escreva("╚═══════════════════════════════════════╝")
+    escreva("")
+    
+    // Fibonacci
+    escreva("🔢 Sequência de Fibonacci (primeiros 10):")
+    para i de 0 ate 9 {
+        escreva("   F(", i, ") = ", fibonacciIterativo(i))
+    }
+    escreva("")
+    
+    // Números primos
+    escreva("✨ Números primos até 30:")
+    var primos: texto = "   "
+    para n de 2 ate 30 {
+        se (ehPrimo(n)) {
+            escreva("   ", n, " é primo")
+        }
+    }
+    
+    escreva("")
+    escreva("✅ Fim do programa!")
+    
+    retorna 0
+}
